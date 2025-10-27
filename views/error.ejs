@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link href="/css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex items-center justify-center min-h-screen bg-gray-50">
+      <div class="text-center">
+        <p class="text-blue-400 font-bold"><%= error.message %></p>
+        <p class="text-gray-600">Status: <%= error.status %></p>
+        <pre class="text-xs text-gray-500"><%= error.stack %></pre>
+      </div>
+    </main>
+  </body>
+</html>
